@@ -3,7 +3,7 @@ def radixsort(array):
     exp = 1
 
     while maxVal // exp > 0:
-        bins = [[] for _ in range(10)]  # Create 10 buckets
+        bins = [[] for i in range(10)]  # Create 10 buckets
 
         for num in array:
             digit = (num // exp) % 10  # Get the digit at the current position
